@@ -1,0 +1,140 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.header {
+    text-align: left;
+    background: #222;
+    position: relative;
+    width: 100%;
+    z-index: 6;
+    padding: 20px;
+}
+
+.header h1 {
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 77px);
+}
+
+.container .navigation {
+    background-color: springgreen;
+    position: fixed;
+    height: auto;
+    width: 20%;
+    top: 77px;
+    bottom: 0;
+    background: aliceblue;    
+}
+
+.search__wrapper {
+    display: block;
+    padding: 0;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+    background: indianred;
+    height: 50px;
+}
+
+.search__wrapper h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.navigation-links-wrapper {
+    top: 0;
+    bottom: 0;
+    padding-top: 0;
+    background-color: white;
+    top: 3.25em;
+    max-width: 20em;
+}
+  
+.navigation-links-wrapper__scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    right: 0;
+    bottom: 60px;
+    width: 100%;
+}
+  
+.navigation-modal-button {
+    background-color: #077aa6;
+    padding: 0.9375em;
+    display: block;
+    text-align: center;
+    margin: 0.3125em;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 97%;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+.navigation__links {
+    font-weight: 300;
+    font-size: 1em;
+    width: 100%;
+    display: block;
+}
+
+.navigation__links li a {
+    padding: 20px 0;
+    padding-left: 15px;
+    border-bottom: 1px solid #ddd;
+    transition: all 0.3s ease-in-out;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+
+.navigation__links li a:hover {
+    background-color: yellow;;
+    padding: 30px;
+}
+
+.navigation__links li:last-child a {
+    border-bottom: none;
+}
+
+.navigation__links li > a.active {
+    color: indianred;
+    background-color: #ddd;
+}
+
+#content {
+    background-color: #eee;
+    padding: 0.8em;
+    width: 80%;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}

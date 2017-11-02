@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Content Loader Css Tricks</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Loading content with ajax/jQuery</h1>
+    </header>
+    <div class="container">
+        <div class="navigation">
+            <div class="search__wrapper">
+                <h3>MZ</h3>
+            </div>
+            <nav class="navigation-links-wrapper">                    
+                <div class="navigation-links-wrapper__scroll">
+                    <div class="navigation__links">
+                        <ul>
+                            <li>
+                                <a href="pages/home.html" class="active">Home</a>
+                            </li>
+                            <li>
+                                <a href="pages/about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="pages/contact.html">Contact</a>
+                            </li>
+                            <!-- you can add more links if you wana see scrooll 100% -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="navigation-modal-button" id="click">
+                    <span>share ideas</span>      
+                </div>
+            </nav>
+        </div>
+        <div id="content"></div>        
+    </div>
+    <script src="jquery.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
