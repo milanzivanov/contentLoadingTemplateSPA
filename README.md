@@ -2,4 +2,4 @@
 
 ## Like a spa template
 
-(link preview)[https://bitter-doctor.surge.sh]
+[link preview](https://bitter-doctor.surge.sh)
